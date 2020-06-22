@@ -72,9 +72,7 @@ a {
   max-width: 1170px;
   width: 100%;
   padding: 0 15px;
-  margin: 0 auto;
-  min-width: 45em;
-  padding: 0 2em;
+  margin: 0 auto
 }
 
 .top-wrapper {
