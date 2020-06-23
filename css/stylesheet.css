@@ -1,0 +1,403 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+* {
+  box-sizing: border-box;
+}
+
+#close {
+  background-color: rgba(64, 68, 65, 0.5);
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  animation:autopopup 3.5s;
+}
+
+#close:target {
+  -webkit-transition:all 1s;
+  -moz-transition:all 1s;
+  transition:all 1s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media (min-width: 768px){
+  .container-popup {
+      width:30%;
+  }
+}
+
+@media (max-width: 767px){
+  .container-popup {
+      width:30%;
+  }
+}
+
+.container-popup {
+  position: relative;
+  margin: 5% auto;
+  padding: 4px 3px;
+  background-color: #e1fff5;
+  color: #333;
+  border-radius: 8px;
+}
+
+.container-popup img {
+  width: 100%
+}
+
+.close {
+  position: absolute;
+  top:3px;
+  right:3px;
+  background-color: #33898B;
+  padding:7px 10px;
+  font-size: 15px;
+  text-decoration: none;
+  line-height: 1;
+  color:#fff;
+}
+
+body {
+  margin: 0;
+  font-family: "Lucida Grande";
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.top-wrapper p {
+  opacity: 0.7;
+  margin-bottom: 3px;
+}
+
+.btn-wrapper {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fa {
+  margin-right: 5px;
+}
+header {
+  height: 80px;
+  width: 100%;
+  background-color: rgba(255, 0, 0, 0.5);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 60px;
+  margin-top: 5px;
+  height: 75px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  line-height: 80px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display:  none;
+}
+
+.lesson-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+  
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: black;
+}
+
+.heading h2 {
+  font-weight: normal;
+}
+
+.lesson {
+  float: left;
+  width: 25%;
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+.lesson-icon p {
+  position: absolute;
+  top: 44%;
+  width: 100%;
+  color: white;
+}
+
+.text-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 15px;
+  color: #b3aeb5;
+}
+
+.heading h3 {
+  font-weight: normal;
+}
+
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+footer img {
+  width: 125px;
+}
+
+footer p {
+  color: black;
+  font-size: 12px;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: red;
+}
+.tales {
+  width: 100%;
+}
+.carousel-inner{
+  width:100%;
+  max-height: 950px !important;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  top: 0;
+  z-index: 3;
+  
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  float: right;
+  
+}
+
+nav li {
+  display: inline-block;
+  padding: 2em;
+  text-align: center;
+  transition: all .2s;
+}
+
+nav li:last-child {
+  padding-right: 0;
+}
+
+nav a {
+  color: #FFF;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+nav a:hover {
+  color: #DDD;
+}
+
+#icon {
+  display: inline-block;
+  padding-top: .7em;
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#nav-bg {
+  background: #ffc107;
+  position: fixed;
+  height: 5em;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+.tembus{
+  opacity: 0.4;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+.zoom-effect {  
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;  
+}
+
+.card {
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.8);
+  padding: 10px;
+  border: 1px dashed grey;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  width:100%;
+  height:auto;
+}
+
+.zoom-effect:hover .card {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+  position: relative;
+  height:auto;
+  width:100%;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+html {scroll-behavior:smooth;}
+.ignielToTop {
+  width:50px; 
+  height:50px; 
+  position:fixed; 
+  bottom:50px; 
+  right: 50px; 
+  z-index:99; 
+  cursor:pointer; 
+  border-radius:100px; 
+  transition:all .5s; 
+  background:#ff0101 url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center center;
+}
+
+.ignielToTop:hover {
+  background:#ffffff url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center center;}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
