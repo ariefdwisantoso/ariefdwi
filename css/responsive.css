@@ -30,7 +30,7 @@
   
   /* Tambahkan CSS untuk header-right */
   .header-right{
-    width:100%;
+    width:auto;
     height:auto;
     font-size: 10px;
   }
